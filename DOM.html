@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <p class="test2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora, explicabo dolor animi maiores nisi, laborum rerum commodi non recusandae accusamus nobis eaque molestias possimus beatae sed exercitationem cum ratione.</p>
+    <p id="test" class="test2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque molestias nesciunt iste reiciendis dignissimos iure aperiam. Praesentium ipsa explicabo eligendi autem architecto velit illum, id, natus delectus ipsam sit quaerat!</p>
+    <ul>
+        <li>Home</li>
+        <li>Contact us</li>
+        <li>Blog</li>
+    </ul>
+    <ol>
+        <li>Hello</li>
+        <li>World</li>
+    </ol>
+    <script>
+        var para = document.getElementById('test');
+        para.style.color = 'red';
+        var para2 = document.getElementsByClassName('test2');
+        document.write(para2.length);
+        para2[para2.length - 1].style.fontStyle = 'italic';
+        // for(let i in para2){
+        //     para2[i].style.background = 'green';
+        // }
+        var element = document.getElementsByTagName('li');
+        for(let i in element){
+            element[i].style.color = 'red';
+        }
+        var ele = document.querySelectorAll('ol li');
+        ele[1],style.fontSize = "22px"
+       
+    </script>
+</body>
+
+</html>
